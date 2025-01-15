@@ -13,10 +13,12 @@ a {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1519px;
   width: 100%;
   margin: 0 auto;
   padding-top: 30px;
+  padding-left: 139px;
+  padding-right: 139px;
 }
 
 .title-box {
@@ -129,11 +131,3 @@ a {
   height: 16px;
 }
 
-/* .like-content:active svg:nth-child(1) {
-  display: block;
-  transform: scale(1.1);
-}
-
-.like-content:active svg:nth-child(2) {
-  display: none;
-} */

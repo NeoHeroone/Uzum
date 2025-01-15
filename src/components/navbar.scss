@@ -1,0 +1,142 @@
+.navbar {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    ul {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      gap: 8px;
+
+      li {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 12px 10px;
+        cursor: pointer;
+
+        &:hover {
+          border-color: #719ECE;
+          box-shadow: 0 0 10px #719ECE;
+          border-radius: 10px;
+        }
+
+        a {
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 14px;
+          color: #1F2026;
+        }
+      }
+    }
+
+    .search-content {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+
+      .category {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: 0.08399999886751175px;
+        color: #7000FF;
+        display: flex;
+        align-items: center;
+        padding: 8px 18px;
+        background: #F0F0FF;
+        border: none;
+        border-radius: 4px;
+      }
+
+      form {
+        display: flex;
+        align-items: center;
+        border: 1px solid #36364033;
+        border-radius: 4px;
+
+        input {
+          padding: 10px 226px 12px 16px;
+          border: none;
+
+          &::placeholder {
+            width: 393px;
+            color: #757575;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16.94px;
+          }
+
+          &:focus {
+            outline: none !important;
+            border-color: #719ECE;
+            box-shadow: 0 0 10px #719ECE;
+          }
+        }
+
+        button {
+          background: #F2F4F7;
+          border: none;
+          padding: 12px 31px;
+        }
+      }
+    }
+  }
+}
+
+.korzinka {
+  position: relative;
+
+  .container {
+    padding: 0;
+    width: 436px;
+
+    .korzinka-boxes {
+      position: absolute;
+      border: 1px solid #7C7C7C70;
+      border-radius: 19px;
+      padding: 10px;
+      top: -1080px;
+      right: 150px;
+      background: #F0F0FF;
+
+      .korzinka-box {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .korzinka-description {
+          font-size: 14px;
+        }
+
+        svg:hover {
+          border: 1px solid black;
+          border-radius: 19px;
+          padding: 5px;
+          cursor: pointer;
+        }
+
+        img {
+          width: 70px;
+          height: 90px;
+        }
+      }
+
+      .korzina-btns {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        button {
+          background: #7000FF;
+          padding: 10px 30px;
+          border: 1px solid transparent;
+          border-radius: 19px;
+          cursor: pointer;
+          color: #F0F0FF;
+        }
+      }
+    }
+  }
+}

@@ -1,15 +1,25 @@
 import React, { useState } from "react";
 
-const UserCard = ({ data }) => {
+const UserCard = ({ data, cartState, setCartState }) => {
   const [number, setNumber] = useState(0);
   const [color, setColor] = useState("/liked.svg")
 
   function increment() {
     setNumber((prevNumber) => prevNumber + 1);
+    const newArr = cartState.concat([{
+      nomi: data.desc,
+      narx: data.narx,
+      img: data.img
+    }])
+    setCartState(newArr)
   }
 
   function decrement() {
     setNumber((prevNumber) => (prevNumber > 0 ? prevNumber - 1 : 0));
+    const new__Arr = cartState.filter((item)=>{
+      item.id !== data.id
+    })
+    setCartState(new__Arr)
   }
 
   function change() {
